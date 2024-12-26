@@ -1,0 +1,11 @@
+services:
+  caddy:
+    build:
+      dockerfile: Dockerfile
+    volumes:
+      - ./Caddyfile:/Caddyfile:ro
+    env_file: .env
+    ports:
+      - 443:443
+      - 80:80
+    restart: always

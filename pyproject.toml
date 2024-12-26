@@ -1,0 +1,17 @@
+[project]
+name = "xcaddy-revproxy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "invoke>=2.2.0",
+    "rich>=13.9.4",
+]
+
+[project.scripts]
+xcaddy-revproxy = "xcaddy_revproxy:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
